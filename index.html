@@ -33,34 +33,81 @@
 </div>
 
 <!-- TODO: all the 'common' samples from each trained model -->
-<!--<div>-->
-<!--    <h3>Tacotron works well on out-of-domain and complex words.</h3>-->
-<!--    <table>-->
-<!--        <tr>-->
-<!--            <td class="transcript">“Generative adversarial network or variational auto-encoder.”</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td>-->
-<!--                <audio controls>-->
-<!--                    <source src="demos/gan_or_vae_r2.wav">-->
-<!--                </audio>-->
-<!--            </td>-->
-<!--        </tr>-->
-<!--    </table>-->
+<div>
+    <h3>Common phrase synthesis.</h3>
+    <p>Multiple models were used to synthesize the same phrases (sentences).</p>
+    <table>
+        <tr>
+            <th>Phrase</th>
+            <th>Tacotron 2 (Vytautas)</th>
+            <th>Tacotron 2 (Aurimas)</th>
+            <th>VITS (Vytautas)</th>
+            <th>VITS (Paulius, phoneme)</th>
+            <th>VITS (Paulius, stressed)</th>
+        </tr>
+        <tr>
+            <td>Sveiki atvykę, kuo galiu jums padėti?</td>
+            <td><audio controls><source src="files/tacotron2/vytautas/common/aa_sveiki_atvykę_kuo_galiu_jums_padėti.wav"></audio></td>
+            <td><audio controls><source src="files/tacotron2/aurimas/common/aa_sveiki_atvykę_kuo_galiu_jums_padėti.wav"></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td>Išeikite į lauką, pasukite į kairę ir eikite tiesiai iki pastato galo.</td>
+            <td><audio controls><source src="files/tacotron2/vytautas/common/aa_išeikite_į_lauką_pasukite_į_kairę_ir_eikite_tiesiai_iki_pastato_galo.wav"></audio></td>
+            <td><audio controls><source src="files/tacotron2/aurimas/common/aa_išeikite_į_lauką_pasukite_į_kairę_ir_eikite_tiesiai_iki_pastato_galo.wav"></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td>yra du įvažiavimai ir išvažiavimai iš požeminio parkingo.</td>
+            <td><audio controls><source src="files/tacotron2/vytautas/common/aa_yra_du_įvažiavimai_ir_išvažiavimai_iš_požeminio_parkingo.wav"></audio></td>
+            <td><audio controls><source src="files/tacotron2/aurimas/common/aa_yra_du_įvažiavimai_ir_išvažiavimai_iš_požeminio_parkingo.wav"></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td>visos durys apipintos bugieniais, visose kertėse stovėjo Kalėdų eglaitės, papuoštos magišku sniegu ir ledokšniais su aukso žvaigžde viršūnėje.</td>
+            <td><audio controls><source src="files/tacotron2/vytautas/common/aa_visos_durys_apipintos_bugieniais_visose_kertėse_stovėjo_kalėdų_eglaitės_papuoštos_magišku_sniegu_ir_ledokšniais_su_aukso_žvaigžde_viršūnėje.wav"></audio></td>
+            <td><audio controls><source src="files/tacotron2/aurimas/common/aa_visos_durys_apipintos_bugieniais_visose_kertėse_stovėjo_kalėdų_eglaitės_papuoštos_magišku_sniegu_ir_ledokšniais_su_aukso_žvaigžde_viršūnėje.wav"></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td>Kur̃čiojo tèkstas bùs sintezuõjamas jùms.</td>
+            <td><audio controls><source src="files/tacotron2/vytautas/common/aa_kurčiojo_tekstas_bus_sintezuojamas_jums.wav"></audio></td>
+            <td><audio controls><source src="files/tacotron2/aurimas/common/aa_kurčiojo_tekstas_bus_sintezuojamas_jums.wav"></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td>Màno asmeñs kòdas yrà trỹs septynì penkì viénas nùlis viénas viénas nùlis viénas nùlis trỹs.</td>
+            <td><audio controls><source src="files/tacotron2/vytautas/common/aa_mano_asmens_kodas_yra_trys_septyni_penki_vienas_nulis_vienas_vienas_nulis_vienas_nulis_trys.wav"></audio></td>
+            <td><audio controls><source src="files/tacotron2/aurimas/common/aa_mano_asmens_kodas_yra_trys_septyni_penki_vienas_nulis_vienas_vienas_nulis_vienas_nulis_trys.wav"></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+    </table>
 
-<!--    <table>-->
-<!--        <tr>-->
-<!--            <td class="transcript">“Basilar membrane and otolaryngology are not auto-correlations.”</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td>-->
-<!--                <audio controls>-->
-<!--                    <source src="demos/basilar.wav">-->
-<!--                </audio>-->
-<!--            </td>-->
-<!--        </tr>-->
-<!--    </table>-->
-<!--</div>-->
+    <table>
+        <tr>
+            <td class="transcript">“Basilar membrane and otolaryngology are not auto-correlations.”</td>
+        </tr>
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="demos/basilar.wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
 
 <!-- TODO: all the 'test' vs. 'ground-truth' samples from each trained model -->
 <!--<div>-->
